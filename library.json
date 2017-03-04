@@ -1,0 +1,19 @@
+{
+"name": "WaterFS",
+  "keywords": "sensor, water, flow, Waterfs",
+  "description": "Digital-output relative water flow sensor/module YF-S201",
+  "authors":
+    {
+        "name": "Ariel Jose Arnedo",
+        "email": "arieljose55@hotmail.com"
+    },
+
+  "repository":
+  {
+    "type": "git",
+    "url": ""
+  },
+  
+  "frameworks": "arduino",
+  "platforms": "atmelavr"
+}
