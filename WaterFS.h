@@ -10,9 +10,8 @@
 #include <avr/interrupt.h>
 #include <stdint.h>
 
-#define PIN_INPUT						2
 #define CUBIC_METERS_PER_SECOND 		-1
-#define CUBIC METERS_PER_HOUR			-2
+#define CUBIC_METERS_PER_HOUR			-2
 #define CUBIC_CENTERMETERS_PER_SECOND	-3
 #define LETERS_PER_HOUR					-4
 
@@ -24,7 +23,9 @@ class WaterFS{
 		WaterFS(int pin);
 		double readWaterflow();
 		double readConverter(int type_unity);
+    double converterValue(double value, int type_unity);
 	private:
 		static void flow();
+    double converter(double value, int type_unity);
 };
 #endif

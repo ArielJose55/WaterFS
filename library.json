@@ -11,9 +11,9 @@
   "repository":
   {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/ArielJose55/WaterFS"
   },
-  
+
   "frameworks": "arduino",
   "platforms": "atmelavr"
 }
