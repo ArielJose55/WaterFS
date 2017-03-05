@@ -10,11 +10,11 @@
 #include <avr/interrupt.h>
 #include <stdint.h>
 
-#define CUBIC_METERS_PER_SECOND 		-1
+#define LETERS_PER_MINUTE 		-1
 #define CUBIC_METERS_PER_HOUR			-2
-#define CUBIC_CENTERMETERS_PER_SECOND	-3
-#define LETERS_PER_HOUR					-4
-
+#define CUBIC_CENTERMETERS_PER_SECOND	-3 // centinela para convertir litros/hora a centrimetros cubicos por segundo
+#define LETERS_PER_HOUR					-4 //centinela para convertir litros/hora (conversion por defecto)
+#define LETERS_PER_SECOND       -5
 
 volatile static int pulses = 0;
 

@@ -24,23 +24,26 @@ double WaterFS::readWaterflow(){
 }
 
 double WaterFS::readConverter(int type_unity){
-  return 1;
+  return converter(readWaterflow(), type_unity);
 }
 
 double WaterFS::converterValue(double value, int type_unity){
-  return 1;
+  return converter(value, type_unity);
 }
 
 double WaterFS::converter(double value, int type_unity){
   switch (type_unity) {
-    case CUBIC_CENTERMETERS_PER_SECOND:{
-      return (value*0.27777777);
+    case CUBIC_CENTERMETERS_PER_SECOND:{//done
+      return (value*0.27777777778);
     }
-    case CUBIC_METERS_PER_HOUR:{
+    case CUBIC_METERS_PER_HOUR:{//done
       return (value*0.001);
     }
-    case CUBIC_METERS_PER_SECOND:{
-      return (value*2.77777777778);
+    case LETERS_PER_MINUTE:{
+      return (value*0.01666666667);
+    }
+    case LETERS_PER_SECOND:{
+      return (value*0.000277777778);
     }
   }
 }
